@@ -1,0 +1,62 @@
+body {
+  background: #f3eee3;
+  padding: 0;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+}
+
+.app-container svg {
+  width: 100%;
+  overflow: visible;
+}
+
+path {
+  stroke-width: 2rem;
+}
+
+#images-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.responsive-img {
+  width: 18px; /* Adjust the percentage as needed */
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  path {
+    stroke-width: 6rem;
+  }
+  
+  .responsive-img {
+    width: 14px; /* Adjust the percentage as needed */
+    height: 14px;
+  }
+
+  text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  path {
+    stroke-width: 8rem;
+  }  
+
+  .responsive-img {
+    width: 18px; /* Adjust the percentage as needed */
+    height: 18px;
+  }
+
+  text {
+    font-size: 4rem;
+  }
+}
